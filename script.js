@@ -28,3 +28,4 @@ export async function displayJoke() {
 		console.error(error);
 	}
 }
+const myTimeout = setTimeout(displayJoke, 5000);
