@@ -21,6 +21,8 @@ export async function displayJoke() {
 	try {
 		const response = await fetch(url, options);
 		const result = await response.json();
+		let joke = document.querySelector("#displayJoke")
+		joke.innerText = result.joke
 		console.log(result);
 	} catch (error) {
 		console.error(error);
