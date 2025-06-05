@@ -17,3 +17,5 @@ let button = document.querySelector('#Joke-button')
 button.addEventListener("click", displayJoke)
 
 import { displayJoke } from "./script.js";
+import{changeBackgroundColor} from "./script3.js"
+changeBackgroundColor()
